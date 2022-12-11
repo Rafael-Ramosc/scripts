@@ -10,7 +10,7 @@ service = build("youtube", "v3", developerKey=api_key)
 results = service.search().list(
   part="id,snippet",
   type="video",
-  q="teste",
+  q="",
   maxResults=10).execute()
 
 # Print the results
